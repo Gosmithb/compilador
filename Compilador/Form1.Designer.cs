@@ -57,6 +57,7 @@
             this.analizar_btn.TabIndex = 3;
             this.analizar_btn.Text = "Analizar Codigo";
             this.analizar_btn.UseVisualStyleBackColor = true;
+            this.analizar_btn.Click += new System.EventHandler(this.analizar_btn_Click);
             // 
             // Form1
             // 

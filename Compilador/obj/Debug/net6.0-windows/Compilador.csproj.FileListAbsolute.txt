@@ -1,0 +1,17 @@
+C:\Users\Admin\source\repos\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.exe
+C:\Users\Admin\source\repos\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.deps.json
+C:\Users\Admin\source\repos\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.runtimeconfig.json
+C:\Users\Admin\source\repos\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.dll
+C:\Users\Admin\source\repos\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.pdb
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.Form1.resources
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.dll
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\refint\Compilador.dll
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.pdb
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\ref\Compilador.dll

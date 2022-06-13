@@ -9,8 +9,8 @@ namespace Compilador
     internal class Lexico
     {
 
-        public List<Error> listaError; //SALIDA 
-        public List<Token> listaToken; //atributo es la SALIDA del lexico.
+        public List<Error> listaDeError; //SALIDA 
+        public List<Token> listaDeToken; //atributo es la SALIDA del lexico.
 
         private string codigoFuente;    // atributo que representa la ENTRADA del lexico.
         private int linea;
@@ -21,8 +21,8 @@ namespace Compilador
              //  let  ||  Dig   ||  +  ||   -   ||   /   ||  *  ||  =  ||   %  ||  >  ||  <  ||  ?  ||  &  ||  |  ||  ^  ||  (  ||  )  ||  .  ||  ,  ||  ;  ||  '  ||  "  ||  !  ||  {  ||  }  ||  [  ||  ]  ||  esp  ||  tab  ||  eb  ||  enter  ||  fl  ||  sl  ||  oc  ||
        /* 0 */{    1   ,    2   ,   5   ,    6   ,   7   ,   8   ,  10  ,  12   ,  13  ,  16  ,  18  ,  20  ,  22  ,  25  , -41  , -42  , -47  , -48  , -49  , -50  , -51  ,  26  , -43  , -44  , -45  , -46  ,    0   ,    0   ,   0   ,    0     ,   0   ,   0   ,  -508 },
        /* 1 */{    1   ,    1   ,  -1   ,   -1   ,  -1   ,  -1   ,  -1  ,  -1   ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  , -1   ,  -1  ,  -1  ,  -1  ,   -1   ,   -1   ,   -1  ,    -1    ,   -1  ,  -1   ,  -1   },
-       /* 2 */{   -2   ,    2   ,  -2   ,   -2   ,  -2   ,  -2   ,  -2  ,  -2   ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  3  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  , -2   ,  -2  ,  -2  ,  -2  ,   -2   ,   -2   ,   -2  ,    -2    ,   -2  ,  -2   ,  -2   },
-       /* 3 */{  -501  ,    4   , -501   ,  -501  , -501  , -501  , -501 , -501  , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 ,-501  , -501 , -501 , -501 ,  -501  ,  -501  , -501  ,    -501  ,  -501 , -501  ,  -501 },
+       /* 2 */{   -2   ,    2   ,  -2   ,   -2   ,  -2   ,  -2   ,  -2  ,  -2   ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  3   ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  , -2   ,  -2  ,  -2  ,  -2  ,   -2   ,   -2   ,   -2  ,    -2    ,   -2  ,  -2   ,  -2   },
+       /* 3 */{  -501  ,    4   , -501  ,  -501  , -501  , -501  , -501 , -501  , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 ,-501  , -501 , -501 , -501 ,  -501  ,  -501  , -501  ,    -501  ,  -501 , -501  ,  -501 },
        /* 4 */{   -3   ,    4   ,  -3   ,   -3   ,  -3   ,  -3   ,  -3  ,  -3   ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  ,  -3  , -3   ,  -3  ,  -3  ,  -3  ,   -3   ,   -3   ,  -3   ,    -3    ,   -3  ,  -3   , -3    },
        /* 5 */{  -10   ,  -10   ,  -7   ,   -10  ,  -10  , -10   , -15  ,  -10  , -10  , -10  , -10  ,  -10 , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  , -10  ,   -10  ,   -10  ,  -10  ,    -10   ,  -10  ,  -10  ,  -10  },
        /* 6 */{   -9   ,   -9   ,  -9   ,   -8   ,  -9   ,  -9   , -16  ,  -9   ,  -9  ,  -9  ,  -9  ,  -9  ,  -9  , -9   ,  -9  ,  -9  ,  -9  ,  -9  ,  -9  ,  -9  ,  -9  ,  -9  , -9   ,  -9  ,  -9  ,  -9  ,   -9   ,   -9   ,  -9   ,    -9    ,   -9  ,  -9   ,  -9   },
@@ -48,16 +48,17 @@ namespace Compilador
        /* 26 */{  -30  ,  -30   , -30   ,   -30  ,  -30  ,  -30  , -32  ,  -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  ,  -30 , -30  , -30  ,  -30 , -30  , -30  , -30  , -30  ,  -30   ,   -30  ,  -30  ,    -30   ,  -30  ,  -30  ,  -30  },
        
         };
+        
 
         /// <summary>
         /// Cosntructor 
         /// </summary>
         /// <param name="codigo">el contenido del archivo que abrimos</param>
-        public Lexico(string codigoFuenteInterface)
+        public Lexico(string codigoACompilar)
         {
-            codigoFuente = codigoFuenteInterface + " ";
-            listaToken = new List<Token>();  // inicializar
-            listaError = new List<Error>();  // inicializar
+            codigoFuente = codigoACompilar + " ";
+            listaDeToken = new List<Token>();  // inicializar
+            listaDeError = new List<Error>();  // inicializar
         } //constructor
 
 
@@ -460,7 +461,7 @@ namespace Compilador
             }
         }
 
-        private Error ManejoErrores(int estado)
+        private Error ManejoDeErrores(int estado)
         {
             string mensajeError;
 
@@ -543,7 +544,7 @@ namespace Compilador
 
                     nuevoToken.TipoToken = esTipo(nuevoToken.ValorToken);
 
-                    listaToken.Add(nuevoToken); //agrego el tokena a la lista
+                    listaDeToken.Add(nuevoToken); //agrego el tokena a la lista
 
                     /*inicializo valores*/
                     estado = 0;
@@ -552,7 +553,7 @@ namespace Compilador
                 }
                 else if (estado <= -502)
                 {
-                    listaError.Add(ManejoErrores(estado));
+                    listaDeError.Add(ManejoDeErrores(estado));
 
                     estado = 0;
                     columna = 0;
@@ -565,7 +566,7 @@ namespace Compilador
                     lexema = string.Empty;
                 }
             }
-            return listaToken; // el resultado final del lexico
+            return listaDeToken; // el resultado final del lexico
         } //metodo principal de la clase lexico
     }
 

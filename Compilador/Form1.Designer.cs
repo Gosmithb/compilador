@@ -30,7 +30,6 @@
         {
             this.txtBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.analizar_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewErrores = new System.Windows.Forms.DataGridView();
             this.dataGridViewTokens = new System.Windows.Forms.DataGridView();
@@ -69,16 +68,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 2;
-            // 
-            // analizar_btn
-            // 
-            this.analizar_btn.Location = new System.Drawing.Point(406, 27);
-            this.analizar_btn.Name = "analizar_btn";
-            this.analizar_btn.Size = new System.Drawing.Size(94, 42);
-            this.analizar_btn.TabIndex = 3;
-            this.analizar_btn.Text = "Analizar Codigo";
-            this.analizar_btn.UseVisualStyleBackColor = true;
-            this.analizar_btn.Click += new System.EventHandler(this.analizar_btn_Click);
             // 
             // label2
             // 
@@ -174,6 +163,7 @@
             this.lexicoToolStripMenuItem.Name = "lexicoToolStripMenuItem";
             this.lexicoToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.lexicoToolStripMenuItem.Text = "Lexico";
+            this.lexicoToolStripMenuItem.Click += new System.EventHandler(this.lexicoToolStripMenuItem_Click);
             // 
             // sintacticoToolStripMenuItem
             // 
@@ -220,7 +210,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lable2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.analizar_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBox);
             this.Controls.Add(this.menuStrip1);
@@ -242,7 +231,6 @@
 
         private RichTextBox txtBox;
         private Label label1;
-        private Button analizar_btn;
         private Label label2;
         private DataGridView dataGridViewErrores;
         private DataGridView dataGridViewTokens;

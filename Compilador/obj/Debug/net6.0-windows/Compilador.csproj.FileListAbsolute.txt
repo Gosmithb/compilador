@@ -15,3 +15,4 @@ C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\refin
 C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.pdb
 C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.genruntimeconfig.cache
 C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\ref\Compilador.dll
+C:\Users\Admin\source\repos\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.About.resources

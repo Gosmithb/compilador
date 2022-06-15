@@ -10,7 +10,13 @@ namespace Compilador
             InitializeComponent();
         }
 
-        private void analizar_btn_Click(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAbout = new About();
+            frmAbout.Show();
+        }
+
+        private void lexicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string codigoFuente;
             codigoFuente = txtBox.Text;
@@ -27,15 +33,6 @@ namespace Compilador
             dataGridViewTokens.DataSource = listaDeTokens;
 
 
-
-
-
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var frmAbout = new About();
-            frmAbout.Show();
         }
     }
 }

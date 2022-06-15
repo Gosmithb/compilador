@@ -19,7 +19,7 @@ namespace Compilador
         {
              //    0       1        2       3        4       5      6       7      8      9      10     11    12      13    14      15    16     17      18     19     20     21     22    23      24     25     26       27      28       29         30      31      32
              //  let  ||  Dig   ||  +  ||   -   ||   /   ||  *  ||  =  ||   %  ||  >  ||  <  ||  ?  ||  &  ||  |  ||  ^  ||  (  ||  )  ||  .  ||  ,  ||  ;  ||  '  ||  "  ||  !  ||  {  ||  }  ||  [  ||  ]  ||  esp  ||  tab  ||  eb  ||  enter  ||  fl  ||  sl  ||  oc  ||
-       /* 0 */{    1   ,    2   ,   5   ,    6   ,   7   ,   8   ,  10  ,  12   ,  13  ,  16  ,  18  ,  20  ,  22  ,  25  , -41  , -42  , -47  , -48  , -49  , -50  , -51  ,  26  , -43  , -44  , -45  , -46  ,    0   ,    0   ,   0   ,    0     ,   0   ,   0   ,  -508 },
+       /* 0 */{    1   ,    2   ,   5   ,    6   ,   7   ,   8   ,  10  ,  12   ,  13  ,  16  ,  18  ,  20  ,  22  ,  25  , -41  , -42  , -47  , -48  , -49  , -50  , -51  ,  26  , -43  , -44  , -45  , -46  ,    0   ,    0   ,   0   ,    0     ,   0   ,   0   ,  -510 },
        /* 1 */{    1   ,    1   ,  -1   ,   -1   ,  -1   ,  -1   ,  -1  ,  -1   ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  ,  -1  , -1   ,  -1  ,  -1  ,  -1  ,   -1   ,   -1   ,   -1  ,    -1    ,   -1  ,  -1   ,  -1   },
        /* 2 */{   -2   ,    2   ,  -2   ,   -2   ,  -2   ,  -2   ,  -2  ,  -2   ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  ,  3   ,  -2  ,  -2  ,  -2  ,  -2  ,  -2  , -2   ,  -2  ,  -2  ,  -2  ,   -2   ,   -2   ,   -2  ,    -2    ,   -2  ,  -2   ,  -2   },
        /* 3 */{  -501  ,    4   , -501  ,  -501  , -501  , -501  , -501 , -501  , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 , -501 ,-501  , -501 , -501 , -501 ,  -501  ,  -501  , -501  ,    -501  ,  -501 , -501  ,  -501 },
@@ -46,6 +46,10 @@ namespace Compilador
        /* 24 */{ -508  , -508   ,-508   ,  -508  , -508  , -508  , -24  , -508  , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 , -508 ,  -508  ,   -508 ,  -508 ,    -508  ,  -508 , -508  ,  -508 },
        /* 25 */{  -39  ,  -39   , -39   ,   -39  ,  -39  ,  -39  ,  26  ,  -39  , -39  , -39  , -39  , -39  , -39  , -39  , -39  , -39  , -39  , -39  ,  -39 , -39  , -39  ,  -39 , -39  , -39  , -39  , -39  ,  -39   ,   -39  ,  -39  ,    -39   ,  -39  ,  -39  ,  -39  },
        /* 26 */{  -30  ,  -30   , -30   ,   -30  ,  -30  ,  -30  , -32  ,  -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  , -30  ,  -30 , -30  , -30  ,  -30 , -30  , -30  , -30  , -30  ,  -30   ,   -30  ,  -30  ,    -30   ,  -30  ,  -30  ,  -30  },
+       /* 27 */{   28  ,   28   ,  28   ,    28  ,   28  ,   28  ,  28  ,   28  ,  28  ,  28  ,  28  ,  28  ,  28  ,  28  ,  28  ,  28  ,  28  ,  28  ,   28 ,  28  ,  28  ,   28 ,  28  ,  28  ,  28  ,  28  ,   28   ,    28  ,   28  ,     28   ,   28  ,   28  ,   28  },
+       /* 28 */{ -509  , -509   , -509  ,  -509  , -509  , -509  ,-509  , -509  , -509 , -509 , -509 , -509 , -509 , -509 , -509 , -509 , -509 , -509 , -509 ,  -5  , -509 , -509 , -509 , -509 , -509 , -509 ,   -509 ,   -509 ,  -509 ,   -509   ,  -509 ,  -509 ,  -509 },
+       /* 29 */{   30  ,   30   ,  30   ,    30  ,   30  ,   30  ,  30  ,   30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,   30 ,  30  ,  30  ,   30 ,  30  ,  30  ,  30  ,  30  ,   30   ,    30  ,   30  ,     30   ,   30  ,   30  ,   30  },
+       /* 30 */{   30  ,   30   ,  30   ,    30  ,   30  ,   30  ,  30  ,   30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,  30  ,   30 ,  30  ,  -4  ,   30 ,  30  ,  30  ,  30  ,  30  ,   30   ,    30  ,   30  ,     30   ,   30  ,   30  ,   30  },
        
         };
         
@@ -211,6 +215,7 @@ namespace Compilador
             return Convert.ToChar(codigoFuente.Substring(i, 1));
         }
 
+
         private int RegresarColumna(char caracter)
         {
             if (char.IsLetter(caracter))
@@ -221,132 +226,135 @@ namespace Compilador
             {
                 return 1;
             }
-            else if (caracter.Equals('.'))
+            else if (caracter.Equals('+'))
             {
                 return 2;
             }
-            else if (caracter.Equals(';'))
+            else if (caracter.Equals('-'))
             {
                 return 3;
             }
-            else if (caracter.Equals('+'))
+            else if (caracter.Equals('/'))
             {
                 return 4;
             }
-            else if (caracter.Equals('-'))
+            else if (caracter.Equals('*'))
             {
                 return 5;
             }
-            else if (caracter.Equals('*'))
+            else if (caracter.Equals('='))
             {
                 return 6;
             }
-            else if (caracter.Equals('/'))
+            else if (caracter.Equals('%'))
             {
                 return 7;
             }
-            else if (caracter.Equals('='))
+            else if (caracter.Equals('>'))
             {
                 return 8;
             }
-            else if (caracter.Equals('>'))
+            else if (caracter.Equals('<'))
             {
                 return 9;
             }
-            else if (caracter.Equals('<'))
+            else if (caracter.Equals('?'))
             {
                 return 10;
             }
-            else if (caracter.Equals('{'))
+            else if (caracter.Equals('&'))
             {
                 return 11;
             }
-            else if (caracter.Equals('}'))
+            else if (caracter.Equals('|'))
             {
                 return 12;
             }
-            else if (caracter.Equals('('))
+            else if (caracter.Equals('^'))
             {
                 return 13;
             }
-
-            else if (caracter.Equals(')'))
+            else if (caracter.Equals('('))
             {
                 return 14;
             }
-            else if (caracter.Equals('['))
+            else if (caracter.Equals(')'))
             {
                 return 15;
             }
-
-            else if (caracter.Equals(']'))
+            else if (caracter.Equals('.'))
             {
                 return 16;
             }
-            else if (caracter.Equals(':'))
+            else if (caracter.Equals(','))
             {
                 return 17;
             }
-
-            else if (caracter.Equals(','))
+            else if (caracter.Equals(';'))
             {
                 return 18;
             }
-            else if (caracter.Equals('"'))
+            else if (caracter.Equals("'"))
             {
                 return 19;
             }
-
-            else if (caracter.Equals("'"))
+            else if (caracter.Equals('"'))
             {
                 return 20;
             }
-            else if (caracter.Equals('|'))
+            else if (caracter.Equals('!'))
             {
                 return 21;
             }
-
-            else if (caracter.Equals('&'))
+            else if (caracter.Equals('{'))
             {
                 return 22;
             }
-            else if (caracter.Equals('*'))
+            else if (caracter.Equals('}'))
             {
                 return 23;
             }
-
-            else if (caracter.Equals('_'))
+            else if (caracter.Equals('['))
             {
                 return 24;
             }
-            else if (caracter.Equals('!'))
+            else if (caracter.Equals(']'))
             {
                 return 25;
             }
-
-            else if (caracter.Equals(' '))
+            else if (caracter.Equals(' ')) //space
             {
                 return 26;
             }
-            else if (caracter.Equals('\n'))//enter
+            else if (caracter.Equals('\t')) //tab
             {
                 return 27;
             }
-
-            else if (caracter.Equals('\t')) //tab
+            else if (caracter.Equals('\r')) //enter
+            {
+                return 29;
+            }
+            else if (caracter.Equals('\n')) //salto linea
+            {
+                return 31;
+            }
+            else if (char.IsWhiteSpace(caracter))//Espacio blanco
             {
                 return 28;
             }
-
-            else  //simbolo desconocido
+            else if (caracter.Equals('\n')) //final linea
             {
                 return 30;
+            }
+            else  //simbolo desconocido
+            {
+                return 32;
             }
 
 
         }
-        
-   
+
+
 
         private TipoToken esTipo(int estado)
         {
@@ -471,27 +479,30 @@ namespace Compilador
                     mensajeError = "Se espera un caracter numerico";
                     break;
                 case -502:
-                    mensajeError = "Se espera simbolo simple";
+                    mensajeError = "Se espera simbolo mayor que";
                     break;
                 case -503:
-                    mensajeError = "Formato incorrecto : Se espera operador de asignacion";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -504:
-                    mensajeError = "Formato incorrecto : Se espera operador de asignacion";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -505:
-                    mensajeError = "Formato incorrecto : Se espera operador de asignacion";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -506:
-                    mensajeError = "Formato incorrecto : Se espera operador de asignacion";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -507:
-                    mensajeError = "Se espera simbolo simple";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -508:
-                    mensajeError = "Formato incorrecto : Se espera operador de asignacion";
+                    mensajeError = "Formato incorrecto : Se espera operador de asignacion igual";
                     break;
                 case -509:
+                    mensajeError = "Formato incorrecto : Se esperaba un solo caracter";
+                    break;
+                case -510:
                     mensajeError = "Caracter desconocido";
                     break;
                 default:
@@ -528,7 +539,7 @@ namespace Compilador
                 columna = RegresarColumna(caracterActual);
                 estado = matrizTransicion[estado, columna];
 
-                if (estado < 0 && estado > -501) //detectar estados finales
+                if (estado < 0 && estado > -500) //detectar estados finales
                 {
                     if (lexema.Length > 1)
                     {
@@ -551,7 +562,7 @@ namespace Compilador
                     columna = 0;
                     lexema = string.Empty;
                 }
-                else if (estado <= -502)
+                else if (estado <= -501)
                 {
                     listaDeError.Add(ManejoDeErrores(estado));
 

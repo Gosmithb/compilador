@@ -21,8 +21,7 @@ namespace Compilador
         Caracter,
         OperadorRelacional,
         OperadorComparacion,
-        OperadorCondicional,
-        Comentario
+        OperadorCondicional
     }
 
     internal class Token

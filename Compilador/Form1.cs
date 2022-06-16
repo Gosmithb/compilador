@@ -29,6 +29,7 @@ namespace Compilador
 
             dataGridViewErrores.DataSource = null;
             dataGridViewErrores.DataSource = listaDeErrores;
+
             dataGridViewTokens.DataSource = null;
             dataGridViewTokens.DataSource = listaDeTokens;
 
